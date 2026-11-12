@@ -1,0 +1,111 @@
+1. Output: 100
+Explanation: This query looks specifically at the item called 'bottle of antibiotics'
+and returns how many of that item are on hand.
+
+2. Output: Gene Lewin
+Explanation: This query looks at the names of all the volunteers and returns those
+whose phone numbers don't start with 2 and whose last names are not Jones.
+
+3. Output: George Brewer
+Explanation: This query looks at all of the assignments that require tasks of the
+transporting type, and returns the names of the volunteers who are doing those tasks.
+
+4. Output:
+Prepare 100 food packages
+Take packages to the warehouse
+
+Explanation: This query returns the names of all of the tasks whose task codes do not
+have an assignment associated with them.
+
+5. Output: food and water
+This query finds all of the packages that contain some sort of bottle, and
+returns the unique name(s) of the package type(s) that those packages belong to.
+
+6. Output:
+bottle of antibiotics
+bottle of aspirin
+flashlight
+pack of bandages 
+
+Explanation: This query looks at all the items, and returns the names of the
+items that are not present in any package.
+
+7. Output:
+Prepare 20 children's packages
+Prepare 100 water packages
+Prepare 5,000 packages
+
+Explanation: This query returns the unique names of the tasks that are assigned
+to volunteers who live in New Jersey.
+
+8. Output:
+Joan Simmons
+Chris Jordan
+
+Explanation: This query returns the unique names of the volunteers who
+began assignments in the first half of 2021 (on or after January 1, 2021
+and before July 1, 2021).
+
+9. Output:
+Julie White
+Gerry Banks
+
+Explanation: This query finds all of the packages that contain spam, then
+returns the unique names of the volunteers who were assigned to the tasks of 
+packing those particular packages.
+
+10. Output: Baby formula
+Explanation: This query looks at all of the items in packages, and returns the 
+name(s) of any items whose total value in a given package, depending on its 
+quantity in that package, totals to $100.  
+
+11. Output:
+open           │                  4
+closed         │                  3
+ongoing        │                  2
+pending        │                  1
+
+Explanation: For each type of task status, this query counts the number 
+of unique volunteers that are assigned to tasks of each of those
+task statuses. It returns each task status and its corresponding number
+of volunteers in order from highest to lowest.
+
+12. Output: 106 │       308.0
+(For clarification, taskCode: 106 and totalWeight: 308.0)
+
+Explanation: This query finds the total weight of all packages associated
+with each individual task, sorts the tasks by their total weight from
+heaviest to lightest, then returns just the task code and the weight of
+the task whose packages collectively weigh the most.
+
+13. Output: 3
+Explanation: This query counts and returns the total number of tasks 
+whose task type is not 'packing'.
+
+14. Output:
+can of spam
+dried fruit
+tent
+men's coat
+women's coat 
+sleeping bag 
+
+Explanation: This query looks at all the items that were put in packages,
+and for each item, counts the number of unique volunteers that were assigned to the tasks
+of creating packages that contained that item. It returns the names of the items that were 
+associated with fewer than three volunteers.  
+
+15. Output:
+ 6 │      150.0 
+ 2 │      151.0 
+ 4 │      350.0 
+10 │      750.0 
+ 5 │     1420.0 
+(Format: packageId | totalValue)
+
+Explanation: This query calculates the total value of each package 
+(based on the number and type of items each one contains and their prices), 
+and identifies which packages have a total value of more than 100. 
+It returns the packageId and total monetary value of each of these packages 
+in ascending order of value.
+
